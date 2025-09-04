@@ -20,6 +20,7 @@ class Command(BaseCommand):
             
             if not file_path.endswith(('.csv', '.json', '.xml')):
                 self.stdout.write(self.style.ERROR(f'Unsupported file type: {file_path}'))
+                continue
 
             PoIFileUploader(file_path).upload_to_db()
             self.stdout.write(self.style.SUCCESS(f'Successfully processed file: {file_path}'))

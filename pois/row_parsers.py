@@ -27,22 +27,22 @@ class BasePoIFileRowParser:
         return poi_data
     
     def parse_poi_external_id(self):
-        return NotImplementedError("Subclasses should implement this method")
+        raise NotImplementedError("Subclasses should implement this method")
     
     def parse_poi_name(self):   
-        return NotImplementedError("Subclasses should implement this method")
+        raise NotImplementedError("Subclasses should implement this method")
     
     def parse_poi_latitude(self):
-        return NotImplementedError("Subclasses should implement this method")  
+        raise NotImplementedError("Subclasses should implement this method")  
     
     def parse_poi_longitude(self):      
-        return NotImplementedError("Subclasses should implement this method")  
+        raise NotImplementedError("Subclasses should implement this method")  
     
     def parse_poi_category(self):      
-        return NotImplementedError("Subclasses should implement this method")
+        raise NotImplementedError("Subclasses should implement this method")
     
     def parse_poi_ratings(self):      
-        return NotImplementedError("Subclasses should implement this method")
+        raise NotImplementedError("Subclasses should implement this method")
 
 
 class CSVPoIFileRowParser(BasePoIFileRowParser):
