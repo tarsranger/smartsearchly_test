@@ -18,4 +18,4 @@ go to ```http://127.0.0.1:8080/admin```
 login with your superuser
 
 
-There seemed to be different POIs with identical external_id, so it couldn't be relied on to check for duplicate values.
+There seemed to be different POIs with identical external_id, so it couldn't be relied on to check for duplicate rows in the files.
